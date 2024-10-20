@@ -143,6 +143,3 @@ async def get_inbox(username: str):
 async def get_groups():
     return {"groups": list(manager.groups.keys())}
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
